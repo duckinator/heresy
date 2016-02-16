@@ -20,7 +20,19 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### String
+
+#### String#format
+
+```ruby
+"{2} {1} {foo} {bar}".format('1', '2', foo: 'foo', 'bar' => 'bar')
+# => "2 1 foo bar"
+```
+
+#### Net::Socket
+
+[Net::Socket provides an alternative Socket API for
+Ruby.](https://github.com/ruby-heresy/net-socket)
 
 ## Development
 
