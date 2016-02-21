@@ -1,6 +1,7 @@
 # Heresy
 
-An alternative standard library with no intent of compatibility.
+An alternative standard library for Ruby. It's not _avoiding_ compatability,
+but it's not really aiming for it, either.
 
 ## Installation
 
