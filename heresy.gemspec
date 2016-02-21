@@ -22,9 +22,10 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
 
-  # String
-  spec.add_runtime_dependency "heresy-string", "~> 0.1.0"
+  # Core class improvements.
+  spec.add_runtime_dependency "heresy-string", "~> 1.0.0"
 
   # Net
-  spec.add_runtime_dependency "net-socket", "~> 0.0.1"
+  spec.add_runtime_dependency "net-socket", "~> 1.0.0"
+  #spec.add_runtime_dependency "heresy-net-http", "~> 1.0.0"
 end
