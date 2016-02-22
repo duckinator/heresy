@@ -25,6 +25,10 @@ Gem::Specification.new do |spec|
   # Core class improvements.
   spec.add_runtime_dependency "heresy-string", "~> 1.0.0"
 
+  # Miscellaneous things.
+  spec.add_runtime_dependency "from", "~> 0.1.0"
+  spec.add_runtime_dependency "default", "~> 0.2.0"
+
   # Net
   spec.add_runtime_dependency "net-socket", "~> 1.0.0"
   #spec.add_runtime_dependency "heresy-net-http", "~> 1.0.0"
