@@ -6,8 +6,8 @@ require 'heresy/version'
 Gem::Specification.new do |spec|
   spec.name          = "heresy"
   spec.version       = Heresy::VERSION
-  spec.authors       = ["Marie Markwell"]
-  spec.email         = ["me@marie.so"]
+  spec.authors       = ["Ellen Marie Dash"]
+  spec.email         = ["me@duckie.co"]
 
   spec.summary       = %q{An alternative standard library with no intent of compatibility.}
   spec.description   = spec.summary
