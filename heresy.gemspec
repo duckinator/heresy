@@ -26,7 +26,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "heresy-string", "~> 1.0.0"
 
   # Miscellaneous things.
-  spec.add_runtime_dependency "from", "~> 0.1.0"
+  spec.add_runtime_dependency "from", "~> 1.0.0"
   spec.add_runtime_dependency "default", "~> 0.2.0"
 
   # Net
