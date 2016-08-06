@@ -30,6 +30,20 @@ Or install it yourself as:
 # => "2 1 foo bar"
 ```
 
+#### Default
+
+```ruby
+def foo(bar = default)
+  bar = "default value for bar" if bar.default?
+
+  bar
+end
+
+foo      #=> "default value for bar"
+foo(1)   #=> 1
+foo(nil) #=> nil
+```
+
 #### Net::Socket
 
 [Net::Socket provides an alternative Socket API for
