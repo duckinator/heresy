@@ -27,7 +27,7 @@ Gem::Specification.new do |spec|
 
   # Miscellaneous things.
   spec.add_runtime_dependency "from", "~> 1.0.0"
-  spec.add_runtime_dependency "default", "~> 0.2.0"
+  spec.add_runtime_dependency "default", "~> 1.0.0"
 
   # Net
   spec.add_runtime_dependency "net-socket", "~> 1.0.0"
