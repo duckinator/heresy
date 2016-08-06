@@ -26,7 +26,9 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "heresy-string", "~> 1.0.0"
 
   # Miscellaneous things.
-  spec.add_runtime_dependency "from", "~> 1.0.0"
+  # NOTE: from relies indirectly on debug_inspector (via wot-utilities),
+  #       which can't be installed inside of Bash on Windows. :(
+  #spec.add_runtime_dependency "from", "~> 1.0.0"
   spec.add_runtime_dependency "default", "~> 1.0.0"
 
   # Net
