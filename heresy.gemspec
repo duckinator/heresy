@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
   #       which can't be installed inside of Bash on Windows. :(
   #spec.add_runtime_dependency "from", "~> 1.0.0"
 
-  spec.add_development_dependency "bundler", "~> 1.11"
-  spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "minitest", "~> 5.0"
+  spec.add_development_dependency "bundler", "~> 1.16"
+  spec.add_development_dependency "rake", "~> 12.3"
+  spec.add_development_dependency "minitest", "~> 5.10"
 end
