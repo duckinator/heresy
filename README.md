@@ -1,7 +1,10 @@
 # Heresy
 
-An alternative standard library for Ruby. It's not _avoiding_ compatability,
-but it's not really aiming for it, either.
+Adds all sorts of things to Ruby that are basically blasphemy.
+
+You may also be interested in
+[Net::Socket](https://github.com/duckinator/net-socket), which provides
+an improved socket API.
 
 ## Installation
 
@@ -69,11 +72,6 @@ protected writer(:foo3, :bar3, :baz3)
 
 And ditto for `private` and `public`.
 
-### Net::Socket
-
-[Net::Socket provides an alternative Socket API for
-Ruby.](https://github.com/ruby-heresy/net-socket)
-
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
@@ -82,5 +80,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/heresy.
-
+Bug reports and pull requests are welcome on GitHub at https://github.com/duckinator/heresy.
