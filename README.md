@@ -21,16 +21,14 @@ Or install it yourself as:
 
 ## Usage
 
-### String
-
-#### String#format
+### String#format
 
 ```ruby
 "{2} {1} {foo} {bar}".format('1', '2', foo: 'foo', 'bar' => 'bar')
 # => "2 1 foo bar"
 ```
 
-#### Default
+### Default
 
 ```ruby
 def foo(bar = default)
@@ -44,7 +42,34 @@ foo(1)   #=> 1
 foo(nil) #=> nil
 ```
 
-#### Net::Socket
+### Scoped Accessors
+
+Instead of:
+
+```ruby
+attr_accessor :foo, :bar, :baz
+protected :foo, :bar, :baz
+
+attr_reader :foo2, :bar2, :baz2
+protected :foo2, :bar2, :baz2
+
+attr_writer :foo3, :bar3, :baz3
+protected :foo3, :bar3, :baz3
+```
+
+you can do:
+
+```ruby
+require 'scoped_accessors'
+
+protected accessor(:foo, :bar, :baz)
+protected reader(:foo2, :bar2, :baz2)
+protected writer(:foo3, :bar3, :baz3)
+```
+
+And ditto for `private` and `public`.
+
+### Net::Socket
 
 [Net::Socket provides an alternative Socket API for
 Ruby.](https://github.com/ruby-heresy/net-socket)
