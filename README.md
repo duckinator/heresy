@@ -24,9 +24,15 @@ Or install it yourself as:
 
 ## Usage
 
+To enable all of Heresy, you can use `require "heresy/all"`.
+
+Otherwise, you can require the individual files.
+
 ### String#format
 
 ```ruby
+require "heresy/string"
+
 "{2} {1} {foo} {bar}".format('1', '2', foo: 'foo', 'bar' => 'bar')
 # => "2 1 foo bar"
 ```
@@ -34,6 +40,8 @@ Or install it yourself as:
 ### Default
 
 ```ruby
+require "heresy/default"
+
 def foo(bar = default)
   bar = "default value for bar" if bar.default?
 
@@ -63,7 +71,7 @@ protected :foo3, :bar3, :baz3
 you can do:
 
 ```ruby
-require 'scoped_accessors'
+require "heresy/scoped_accessors"
 
 protected accessor(:foo, :bar, :baz)
 protected reader(:foo2, :bar2, :baz2)
